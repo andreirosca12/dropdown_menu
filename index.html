@@ -13,25 +13,25 @@
     <header>
         <i id="icon" class="fa-solid fa-bars"></i>
         <ul id="menu">
-            <li><a href="#">Acasa</a></li>
+            <li><a href="">Acasa</a></li>
             <li class="produse">
-                <a href="#" id="produse">Produse</a>
+                <a href="" id="produse">Produse</a>
                 <ul class="dropdown">
-                    <li><a href="#">Pantaloni</a></li>
+                    <li><a href="">Pantaloni</a></li>
                     <li class="tricouri">
-                        <a id="tricouri" href="#">Tricouri</a>
+                        <a id="tricouri" href="">Tricouri</a>
                         <ul class="dropdown2">
-                            <li><a href="#">Tricou negru</a></li>
-                            <li><a href="#">Tricou rosu</a></q></li>
-                            <li><a href="#">Tricou alb</a></li>
+                            <li><a href="">Tricou negru</a></li>
+                            <li><a href="">Tricou rosu</a></q></li>
+                            <li><a href="">Tricou alb</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Geci</a></li>
-                    <li><a href="#">Papuci</a></li>
+                    <li><a href="">Geci</a></li>
+                    <li><a href="">Papuci</a></li>
                 </ul>
             </li>
-            <li><a href="#">Despre noi</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="">Despre noi</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </header>
     <script>
@@ -64,7 +64,7 @@
                 dropdown.style.display = "none";
             }
         }
-        tricouri.onclick = () => {
+        tricouri.onclick = function() {
             if (dropdown2.style.display === "none" || menu.style.display === "") {
                 dropdown2.style.display = "block";
             } else {
