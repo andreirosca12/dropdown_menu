@@ -39,10 +39,18 @@
         let mobileicon = document.getElementById("icon");
         let produse = document.getElementById("produse");
         let dropdown = document.getElementsByClassName("dropdown")[0];
-        let dropdown2=document.getElementsByClassName("dropdown2")[0];
-        let tricouri=document.getElementById("tricouri");
+        let dropdown2 = document.getElementsByClassName("dropdown2")[0];
+        let tricouri = document.getElementById("tricouri");
+        window.onresize = function () {
+            if (window.innerWidth >= 784) {
+                menu.style.display = "flex";
+            }
+            else{
+                menu.style.display = "none";
+            }
+        };
         mobileicon.onclick = function () {
-            if (menu.style.display === "none") {
+            if (menu.style.display === "none" || menu.style.display === "") {
                 menu.style.display = "block";
             } else {
                 menu.style.display = "none";
@@ -50,14 +58,14 @@
         }
 
         produse.onclick = function () {
-            if (dropdown.style.display === "none") {
+            if (dropdown.style.display === "none" || menu.style.display === "") {
                 dropdown.style.display = "block";
             } else {
                 dropdown.style.display = "none";
             }
         }
-        tricouri.onclick=()=>{
-            if (dropdown2.style.display === "none") {
+        tricouri.onclick = () => {
+            if (dropdown2.style.display === "none" || menu.style.display === "") {
                 dropdown2.style.display = "block";
             } else {
                 dropdown2.style.display = "none";
